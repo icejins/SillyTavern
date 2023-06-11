@@ -6,13 +6,22 @@ Based on a fork of TavernAI 1.2.8
 
 ### Brought to you by Cohee, RossAscends and the SillyTavern community
 
-NOTE: We have added [a FAQ](faq.md) to answer most of your questions and help you get started.
+NOTE: We have added [a FAQ](https://docs.sillytavern.app/usage/faq/) to answer most of your questions and help you get started.
 
 ### What is SillyTavern or TavernAI?
 
 Tavern is a user interface you can install on your computer (and Android phones) that allows you to interact with text generation AIs and chat/roleplay with characters you or the community create.
 
 SillyTavern is a fork of TavernAI 1.2.8 which is under more active development and has added many major features. At this point, they can be thought of as completely independent programs.
+
+### Branches
+
+SillyTavern is being developed using a two-branch system to ensure a smooth experience for all users.
+
+* main -🌟 **Recommended for most users.** This is the most stable and recommended branch, updated only when major releases are pushed. It's suitable for the majority of users. 
+* dev - ⚠️ **Not recommended for casual use.** This branch has the latest features, but be cautious as it may break at any time. Only for power users and enthusiasts. 
+
+If you're not familiar with using the git CLI or don't understand what a branch is, don't worry! The main branch is always the preferable option for you. 
 
 ### What do I need other than Tavern?
 
