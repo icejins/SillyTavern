@@ -17,6 +17,8 @@ let textgenerationwebui_settings = {
     top_k: 40,
     top_a: 0,
     tfs: 1,
+    epsilon_cutoff: 0,
+    eta_cutoff: 0,
     typical_p: 1,
     rep_pen: 1.2,
     no_repeat_ngram_size: 0,
@@ -36,6 +38,9 @@ let textgenerationwebui_settings = {
     skip_special_tokens: true,
     streaming: false,
     streaming_url: 'ws://127.0.0.1:5005/api/v1/stream',
+    mirostat_mode: 0,
+    mirostat_tau: 5,
+    mirostat_eta: 0.1,
 };
 
 let textgenerationwebui_presets = [];
@@ -49,6 +54,8 @@ const setting_names = [
     "top_p",
     "top_a",
     "tfs",
+    "epsilon_cutoff",
+    "eta_cutoff",
     "typical_p",
     "penalty_alpha",
     "num_beams",
@@ -63,6 +70,9 @@ const setting_names = [
     "skip_special_tokens",
     "streaming",
     "streaming_url",
+    "mirostat_mode",
+    "mirostat_tau",
+    "mirostat_eta",
 ];
 
 function selectPreset(name) {
@@ -218,5 +228,10 @@ export function getTextGenGenerationData(finalPromt, this_amount_gen, isImperson
         'skip_special_tokens': textgenerationwebui_settings.skip_special_tokens,
         'top_a': textgenerationwebui_settings.top_a,
         'tfs': textgenerationwebui_settings.tfs,
+        'epsilon_cutoff': textgenerationwebui_settings.epsilon_cutoff,
+        'eta_cutoff': textgenerationwebui_settings.eta_cutoff,
+        'mirostat_mode': textgenerationwebui_settings.mirostat_mode,
+        'mirostat_tau': textgenerationwebui_settings.mirostat_tau,
+        'mirostat_eta': textgenerationwebui_settings.mirostat_eta,
     };
 }
